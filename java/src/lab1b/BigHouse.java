@@ -1,4 +1,4 @@
-package lab1b;
+ package lab1b;
 
 import java.awt.Canvas;
 import java.awt.Color;
