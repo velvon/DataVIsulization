@@ -115,18 +115,18 @@ public class Tree extends Canvas {
 		t5y[1] = polyy[2];
 		t5y[2] = 100 - 25;
 		int col = 0;
-		while (s != "n") {
+		while (true) {
 			if (col == 0)
 			window.setColor(Color.BLUE);
 			else if(col == 1)
 				window.setColor(Color.PINK);
 			else if(col == 2)
 				window.setColor(Color.ORANGE);
-			else if(col == 1)
+			else if(col == 3)
 				window.setColor(Color.YELLOW);
 			else
 				window.setColor(Color.GRAY);
-			window.fillPolygon(t2x, t2y, 3);
+			window.fillPolygon(t1x, t1y, 3);
 
 			if (col == 1)
 				window.setColor(Color.BLUE);
@@ -171,7 +171,7 @@ public class Tree extends Canvas {
 					window.setColor(Color.YELLOW);
 				else
 					window.setColor(Color.GRAY);		
-			window.fillPolygon(t1x, t1y, 3);
+			window.fillPolygon(t2x, t2y, 3);
 
 			window.setColor(temp[x][0]);
 			window.fillOval(300, 400, 25, 25);
