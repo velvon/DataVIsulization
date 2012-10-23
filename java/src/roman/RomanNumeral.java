@@ -45,9 +45,26 @@ public class RomanNumeral
 
 	public Integer getNumber()
 	{
+		int i=0;
+		int cnt=0;
 		if (number!=0)
 		return number;
-		
+		while (i<12)
+		{
+			
+			if(cnt+2<=roman.length() && roman.substring(cnt,cnt+2)==LETTERS[i])
+			{
+				number+=NUMBERS[i];
+				cnt+=2;
+			}
+			if(cnt+1<=roman.length() && roman.substring(cnt,cnt+1)==LETTERS[i])
+			{
+				number+=NUMBERS[i];
+				cnt+=1;
+			}
+			i++;
+		}
+		return number;
 			
 	}
 
