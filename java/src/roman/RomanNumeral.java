@@ -2,89 +2,78 @@ package roman;
 
 import static java.lang.System.*;
 
-public class RomanNumeral
-{
-	private Integer number;
-	private String roman;
+public class RomanNumeral {
+	private int number;
+	private String roman = "";
 
-	private final static int[] NUMBERS= {1000,900,500,400,100,90,
-													50,40,10,9,5,4,1};
+	private final static int[] NUMBERS = { 1000, 900, 500, 400, 100, 90, 50,
+			40, 10, 9, 5, 4, 1 };
 
-	private final static String[] LETTERS = {"M","CM","D","CD","C","XC",
-												  "L","XL","X","IX","V","IV","I"};
+	private final static String[] LETTERS = { "M", "CM", "D", "CD", "C", "XC",
+			"L", "XL", "X", "IX", "V", "IV", "I" };
 
-	public RomanNumeral(String str)
-	{
+	public RomanNumeral(String str) {
 
 		roman = str;
 
 	}
 
-	public RomanNumeral(Integer orig)
-	{
+	public RomanNumeral(int orig) {
 
 		number = orig;
 
 	}
 
-	public void setNumber(Integer num)
-	{
-
+	public void setNumber(int num) {
 
 		number = num;
 
-
 	}
 
-	public void setRoman(String rom)
-	{
+	public void setRoman(String rom) {
 
 		roman = rom;
 
 	}
 
-	public Integer getNumber()
-	{
-		int i=0;
-		int cnt=0;
-		if (number!=0)
-		return number;
-		while (i<12)
-		{
-			
-			if(cnt+2<=roman.length() && roman.substring(cnt,cnt+2)==LETTERS[i])
-			{
-				number+=NUMBERS[i];
-				cnt+=2;
-			}
-			if(cnt+1<=roman.length() && roman.substring(cnt,cnt+1)==LETTERS[i])
-			{
-				number+=NUMBERS[i];
-				cnt+=1;
-			}
-			i++;
+	public int getNumber() {
+		number = 0;
+		int i = 0;
+		int cnt = 0;
+		while (i < 13) {
+
+			if (cnt + 2 <= roman.length() && roman.substring(cnt, cnt + 2).equals(LETTERS[i])) {
+				number += NUMBERS[i];
+				cnt += 2;
+			} else if (cnt + 1 <= roman.length() && roman.substring(cnt, cnt + 1).equals(LETTERS[i])) {
+				number += NUMBERS[i];
+				cnt += 1;
+			} else
+				i++;
 		}
 		return number;
-			
+
 	}
 
-	public String toString()
-	{
+	public String toString() {
+		roman = "";
 		int temp = number;
-		if (roman != null && roman!= "")
-		return roman + "\n";
-		while (temp>0)
-		{
-			for (int a = 0; a < 12; a++)
-			{
-				if(NUMBERS[a]<temp)
-				{
+		int a = 0;
+
+		while (temp > 0) {
+
+			on: while (a < 13) {
+				if (NUMBERS[a] <= temp) {
 					temp -= NUMBERS[a];
-					roman.concat(LETTERS[a]);
+					roman += (LETTERS[a]);
+					continue on;
 				}
-				
+
+				a++;
+
 			}
 		}
-			return roman;
+
+		return roman;
 	}
 }

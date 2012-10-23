@@ -32,7 +32,6 @@ public class Tree extends Canvas {
 	}
 
 	public void star(Graphics window) {
-		String s = "";
 		int x = 0;
 
 		Color[][] temp = new Color[6][4];
