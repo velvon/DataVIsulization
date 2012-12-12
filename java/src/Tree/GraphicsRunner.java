@@ -1,16 +1,14 @@
-package Tree;
+
 
 import javax.swing.JFrame;
 
 public class GraphicsRunner extends JFrame
 {
-	private static final int WIDTH = 800;
-	private static final int HEIGHT = 600;
-
+	
 	public GraphicsRunner()
 	{
 		super("Graphics Runner");
-		setSize(WIDTH,HEIGHT);
+		setSize(800,600);
 
 		getContentPane().add(new Tree());
 
