@@ -53,6 +53,7 @@ public class Datavis extends PApplet {
 		rect(10*width/11,height/2+20,15,15);
 		fill(255,255,255);
 		rect(10*width/11,height/2+40,15,15);
+		rect(10*width/11-8,height-20,2,-(height-20));
 		textAlign(LEFT);
 		text("fives",10*width/11+20,height/2-28);
 		text("fours",10*width/11+20,height/2-8);
@@ -265,7 +266,7 @@ public class Datavis extends PApplet {
 			arc(g.getx(),g.gety(),(float) (a / 100 * r.totals()[0] / r.count()),(float) (a / 100 * r.totals()[0] / r.count()),(float) (((PI * 2 * r.fives()[0] / 100) + PI * 2* r.fours()[0] / 100) + (PI * 2 * r.threes()[0] / 100)),(float) (((PI * 2 * r.fives()[0] / 100) + PI * 2* r.fours()[0] / 100)+ (PI * 2 * r.threes()[0] / 100) + (PI * 2* r.twos()[0] / 100)));
 			if(a<=100000)
 			a+=1000;
-			if(!(g.getx()>(1000 * r.totals()[0] / r.count())/2&&g.getx()<width-(1000 * r.totals()[0] / r.count())/2))
+			if(!(g.getx()>(1000 * r.totals()[0] / r.count())/2&&g.getx()<10*width/11-5-(1000 * r.totals()[0] / r.count())/2))
 				g.setx(-g.getxs());
 			if(!(g.gety()>(1000 * r.totals()[0] / r.count())/2&&g.gety()<height-(30+1000 * r.totals()[0] / r.count())/2))
 				g.sety(-g.getys());
@@ -286,7 +287,7 @@ public class Datavis extends PApplet {
 			arc(g2.getx(),g2.gety(),(float) (b / 100 * r.totals()[1] / r.count()),(float) (b / 100 * r.totals()[1] / r.count()),(float) (((PI * 2 * r.fives()[1] / 100) + PI * 2* r.fours()[1] / 100) + (PI * 2 * r.threes()[1] / 100)),(float) (((PI * 2 * r.fives()[1] / 100) + PI * 2* r.fours()[1] / 100)+ (PI * 2 * r.threes()[1] / 100) + (PI * 2* r.twos()[1] / 100)));
 			if(b<=100000)
 			b+=1000;
-			if(!(g2.getx()>(1000 * r.totals()[1] / r.count())/2&&g2.getx()<width-(1000 * r.totals()[1] / r.count())/2))
+			if(!(g2.getx()>(1000 * r.totals()[1] / r.count())/2&&g2.getx()<10*width/11-5-(1000 * r.totals()[1] / r.count())/2))
 				g2.setx(-g2.getxs());
 			if(!(g2.gety()>(1000 * r.totals()[1] / r.count())/2&&g2.gety()<height-(30+1000 * r.totals()[1] / r.count())/2))
 				g2.sety(-g2.getys());
@@ -307,7 +308,7 @@ public class Datavis extends PApplet {
 			arc(g3.getx(),g3.gety(),(float) (c / 100 * r.totals()[2] / r.count()),(float) (c / 100 * r.totals()[2] / r.count()),(float) (((PI * 2 * r.fives()[2] / 100) + PI * 2* r.fours()[2] / 100) + (PI * 2 * r.threes()[2] / 100)),(float) (((PI * 2 * r.fives()[2] / 100) + PI * 2* r.fours()[2] / 100)+ (PI * 2 * r.threes()[2] / 100) + (PI * 2* r.twos()[2] / 100)));
 			if(c<=100000)
 			c+=1000;
-			if(!(g3.getx()>(1000 * r.totals()[2] / r.count())/2&&g3.getx()<width-(1000 * r.totals()[2] / r.count())/2))
+			if(!(g3.getx()>(1000 * r.totals()[2] / r.count())/2&&g3.getx()<10*width/11-5-(1000 * r.totals()[2] / r.count())/2))
 				g3.setx(-g3.getxs());
 			if(!(g3.gety()>(1000 * r.totals()[2] / r.count())/2&&g3.gety()<height-(30+1000 * r.totals()[2] / r.count())/2))
 				g3.sety(-g3.getys());
@@ -329,7 +330,7 @@ public class Datavis extends PApplet {
 			arc(g4.getx(),g4.gety(),(float) (d / 100 * r.totals()[3] / r.count()),(float) (d / 100 * r.totals()[3] / r.count()),(float) (((PI * 2 * r.fives()[3] / 100) + PI * 2* r.fours()[3] / 100) + (PI * 2 * r.threes()[3] / 100)),(float) (((PI * 2 * r.fives()[3] / 100) + PI * 2* r.fours()[3] / 100)+ (PI * 2 * r.threes()[3] / 100) + (PI * 2* r.twos()[3] / 100)));
 			if(d<=100000)
 			d+=1000;
-			if(!(g4.getx()>(1000 * r.totals()[3] / r.count())/2&&g4.getx()<width-(1000 * r.totals()[3] / r.count())/2))
+			if(!(g4.getx()>(1000 * r.totals()[3] / r.count())/2&&g4.getx()<10*width/11-5-(1000 * r.totals()[3] / r.count())/2))
 				g4.setx(-g4.getxs());
 			if(!(g4.gety()>(1000 * r.totals()[3] / r.count())/2&&g4.gety()<height-(30+1000 * r.totals()[3] / r.count())/2))
 				g4.sety(-g4.getys());
@@ -350,7 +351,7 @@ public class Datavis extends PApplet {
 			arc(g5.getx(),g5.gety(),(float) (e / 100 * r.totals()[4] / r.count()),(float) (e / 100 * r.totals()[4] / r.count()),(float) (((PI * 2 * r.fives()[4] / 100) + PI * 2* r.fours()[4] / 100) + (PI * 2 * r.threes()[4] / 100)),(float) (((PI * 2 * r.fives()[4] / 100) + PI * 2* r.fours()[4] / 100)+ (PI * 2 * r.threes()[4] / 100) + (PI * 2* r.twos()[4] / 100)));
 			if(e<=100000)
 			e+=1000;
-			if(!(g5.getx()>(1000 * r.totals()[4] / r.count())/2&&g5.getx()<width-(1000 * r.totals()[4] / r.count())/2))
+			if(!(g5.getx()>(1000 * r.totals()[4] / r.count())/2&&g5.getx()<10*width/11-5-(1000 * r.totals()[4] / r.count())/2))
 				g5.setx(-g5.getxs());
 			if(!(g5.gety()>(1000 * r.totals()[4] / r.count())/2&&g5.gety()<height-(30+1000 * r.totals()[4] / r.count())/2))
 				g5.sety(-g5.getys());
@@ -371,7 +372,7 @@ public class Datavis extends PApplet {
 			arc(g6.getx(),g6.gety(),(float) (f / 100 * r.totals()[5] / r.count()),(float) (f / 100 * r.totals()[5] / r.count()),(float) (((PI * 2 * r.fives()[5] / 100) + PI * 2* r.fours()[5] / 100) + (PI * 2 * r.threes()[5] / 100)),(float) (((PI * 2 * r.fives()[5] / 100) + PI * 2* r.fours()[5] / 100)+ (PI * 2 * r.threes()[5] / 100) + (PI * 2* r.twos()[5] / 100)));
 			if(f<=100000)
 			f+=1000;
-			if(!(g6.getx()>(1000 * r.totals()[5] / r.count())/2&&g6.getx()<width-(1000 * r.totals()[5] / r.count())/2))
+			if(!(g6.getx()>(1000 * r.totals()[5] / r.count())/2&&g6.getx()<10*width/11-5-(1000 * r.totals()[5] / r.count())/2))
 				g6.setx(-g6.getxs());
 			if(!(g6.gety()>(1000 * r.totals()[5] / r.count())/2&&g6.gety()<height-(30+1000 * r.totals()[5] / r.count())/2))
 				g6.sety(-g6.getys());
@@ -392,7 +393,7 @@ public class Datavis extends PApplet {
 			arc(g7.getx(),g7.gety(),(float) (h / 100 * r.totals()[6] / r.count()),(float) (h / 100 * r.totals()[6] / r.count()),(float) (((PI * 2 * r.fives()[6] / 100) + PI * 2* r.fours()[6] / 100) + (PI * 2 * r.threes()[6] / 100)),(float) (((PI * 2 * r.fives()[6] / 100) + PI * 2* r.fours()[6] / 100)+ (PI * 2 * r.threes()[6] / 100) + (PI * 2* r.twos()[6] / 100)));
 			if(h<=100000)
 			h+=1000;
-			if(!(g7.getx()>(1000 * r.totals()[6] / r.count())/2&&g7.getx()<width-(1000 * r.totals()[6] / r.count())/2))
+			if(!(g7.getx()>(1000 * r.totals()[6] / r.count())/2&&g7.getx()<10*width/11-5-(1000 * r.totals()[6] / r.count())/2))
 				g7.setx(-g7.getxs());
 			if(!(g7.gety()>(1000 * r.totals()[6] / r.count())/2&&g7.gety()<height-(30+1000 * r.totals()[6] / r.count())/2))
 				g7.sety(-g7.getys());
@@ -413,7 +414,7 @@ public class Datavis extends PApplet {
 			arc(g8.getx(),g8.gety(),(float) (i / 100 * r.totals()[7] / r.count()),(float) (i / 100 * r.totals()[7] / r.count()),(float) (((PI * 2 * r.fives()[7] / 100) + PI * 2* r.fours()[7] / 100) + (PI * 2 * r.threes()[7] / 100)),(float) (((PI * 2 * r.fives()[7] / 100) + PI * 2* r.fours()[7] / 100)+ (PI * 2 * r.threes()[7] / 100) + (PI * 2* r.twos()[7] / 100)));
 			if(i<=100000)
 			i+=1000;
-			if(!(g8.getx()>(1000 * r.totals()[7] / r.count())/2&&g8.getx()<width-(1000 * r.totals()[7] / r.count())/2))
+			if(!(g8.getx()>(1000 * r.totals()[7] / r.count())/2&&g8.getx()<10*width/11-5-(1000 * r.totals()[7] / r.count())/2))
 				g8.setx(-g8.getxs());
 			if(!(g8.gety()>(1000 * r.totals()[7] / r.count())/2&&g8.gety()<height-(30+1000 * r.totals()[7] / r.count())/2))
 				g8.sety(-g8.getys());
@@ -434,7 +435,7 @@ public class Datavis extends PApplet {
 			arc(g9.getx(),g9.gety(),(float) (j / 100 * r.totals()[8] / r.count()),(float) (j / 100 * r.totals()[8] / r.count()),(float) (((PI * 2 * r.fives()[8] / 100) + PI * 2* r.fours()[8] / 100) + (PI * 2 * r.threes()[8] / 100)),(float) (((PI * 2 * r.fives()[8] / 100) + PI * 2* r.fours()[8] / 100)+ (PI * 2 * r.threes()[8] / 100) + (PI * 2* r.twos()[8] / 100)));
 			if(j<=100000)
 			j+=1000;
-			if(!(g9.getx()>(1000 * r.totals()[8] / r.count())/2&&g9.getx()<width-(1000 * r.totals()[8] / r.count())/2))
+			if(!(g9.getx()>(1000 * r.totals()[8] / r.count())/2&&g9.getx()<10*width/11-5-(1000 * r.totals()[8] / r.count())/2))
 				g9.setx(-g9.getxs());
 			if(!(g9.gety()>(1000 * r.totals()[8] / r.count())/2&&g9.gety()<height-(30+1000 * r.totals()[8] / r.count())/2))
 				g9.sety(-g9.getys());
@@ -446,111 +447,111 @@ public class Datavis extends PApplet {
 		if(bar)
 		{
 			fill(255,255,255);
-			rect(width/11-width/22+10,height-40,width/11-20,(float)(-3000*(r.totals()[0] / r.count())));
-			rect(2*width/11-width/22+10,height-40,width/11-20,(float) (-3000*r.totals()[1] / r.count()));
-			rect(3*width/11-width/22+10,height-40,width/11-20,(float) (-3000*r.totals()[2] / r.count()));
-			rect(4*width/11-width/22+10,height-40,width/11-20,(float) (-3000*r.totals()[3] / r.count()));
-			rect(5*width/11-width/22+10,height-40,width/11-20,(float) (-3000*r.totals()[4] / r.count()));
-			rect(6*width/11-width/22+10,height-40,width/11-20,(float) (-3000*r.totals()[5] / r.count()));
-			rect(7*width/11-width/22+10,height-40,width/11-20,(float) (-3000*r.totals()[6] / r.count()));
-			rect(8*width/11-width/22+10,height-40,width/11-20,(float) (-3000*r.totals()[7] / r.count()));
-			rect(9*width/11-width/22+10,height-40,width/11-20,(float) (-3000*r.totals()[8] / r.count()));
+			rect(width/11-width/22+10,height-40,width/11-20,(float)(-6*height*(r.totals()[0] / r.count())));
+			rect(2*width/11-width/22+10,height-40,width/11-20,(float) (-6*height*r.totals()[1] / r.count()));
+			rect(3*width/11-width/22+10,height-40,width/11-20,(float) (-6*height*r.totals()[2] / r.count()));
+			rect(4*width/11-width/22+10,height-40,width/11-20,(float) (-6*height*r.totals()[3] / r.count()));
+			rect(5*width/11-width/22+10,height-40,width/11-20,(float) (-6*height*r.totals()[4] / r.count()));
+			rect(6*width/11-width/22+10,height-40,width/11-20,(float) (-6*height*r.totals()[5] / r.count()));
+			rect(7*width/11-width/22+10,height-40,width/11-20,(float) (-6*height*r.totals()[6] / r.count()));
+			rect(8*width/11-width/22+10,height-40,width/11-20,(float) (-6*height*r.totals()[7] / r.count()));
+			rect(9*width/11-width/22+10,height-40,width/11-20,(float) (-6*height*r.totals()[8] / r.count()));
 			if (t1) {
 				fill(255,0,0);
-				rect(width/11-width/22+10,height-40,width/11-20,(float)(-3000*(r.totals()[0] / r.count()*(r.fives()[0] / 100))));
+				rect(width/11-width/22+10,height-40,width/11-20,(float)(-6*height*(r.totals()[0] / r.count()*(r.fives()[0] / 100))));
 				fill(0, 255, 0);
-				rect(width/11-width/22+10,height-40+(float)(-3000*(r.totals()[0] / r.count())*r.fives()[0]/100),width/11-20,(float)(-3000*(r.totals()[0] / r.count())*r.fours()[0]/100));
+				rect(width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[0] / r.count())*r.fives()[0]/100),width/11-20,(float)(-6*height*(r.totals()[0] / r.count())*r.fours()[0]/100));
 				fill(0, 0, 255);
-				rect(width/11-width/22+10,height-40+(float)(-3000*(r.totals()[0] / r.count())*r.fives()[0]/100)+(float)(-3000*(r.totals()[0] / r.count())*r.fours()[0]/100),width/11-20,(float)(-3000*(r.totals()[0] / r.count())*r.threes()[0]/100));
+				rect(width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[0] / r.count())*r.fives()[0]/100)+(float)(-6*height*(r.totals()[0] / r.count())*r.fours()[0]/100),width/11-20,(float)(-6*height*(r.totals()[0] / r.count())*r.threes()[0]/100));
 				fill(255, 255, 0);
-				rect(width/11-width/22+10,height-40+(float)(-3000*(r.totals()[0] / r.count())*r.fives()[0]/100)+(float)(-3000*(r.totals()[0] / r.count())*r.fours()[0]/100)+(float)(-3000*(r.totals()[0] / r.count())*r.threes()[0]/100),width/11-20,(float)(-3000*(r.totals()[0] / r.count())*r.twos()[0]/100));
+				rect(width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[0] / r.count())*r.fives()[0]/100)+(float)(-6*height*(r.totals()[0] / r.count())*r.fours()[0]/100)+(float)(-6*height*(r.totals()[0] / r.count())*r.threes()[0]/100),width/11-20,(float)(-6*height*(r.totals()[0] / r.count())*r.twos()[0]/100));
 				
 			}
 			if (t2) {
 				fill(255,0,0);
-				rect(2*width/11-width/22+10,height-40,width/11-20,(float)(-3000*(r.totals()[1] / r.count()*(r.fives()[1] / 100))));
+				rect(2*width/11-width/22+10,height-40,width/11-20,(float)(-6*height*(r.totals()[1] / r.count()*(r.fives()[1] / 100))));
 				fill(0, 255, 0);
-				rect(2*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[1] / r.count())*r.fives()[1]/100),width/11-20,(float)(-3000*(r.totals()[1] / r.count())*r.fours()[1]/100));
+				rect(2*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[1] / r.count())*r.fives()[1]/100),width/11-20,(float)(-6*height*(r.totals()[1] / r.count())*r.fours()[1]/100));
 				fill(0, 0, 255);
-				rect(2*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[1] / r.count())*r.fives()[1]/100)+(float)(-3000*(r.totals()[1] / r.count())*r.fours()[1]/100),width/11-20,(float)(-3000*(r.totals()[1] / r.count())*r.threes()[1]/100));
+				rect(2*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[1] / r.count())*r.fives()[1]/100)+(float)(-6*height*(r.totals()[1] / r.count())*r.fours()[1]/100),width/11-20,(float)(-6*height*(r.totals()[1] / r.count())*r.threes()[1]/100));
 				fill(255, 255, 0);
-				rect(2*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[1] / r.count())*r.fives()[1]/100)+(float)(-3000*(r.totals()[1] / r.count())*r.fours()[1]/100)+(float)(-3000*(r.totals()[1] / r.count())*r.threes()[1]/100),width/11-20,(float)(-3000*(r.totals()[1] / r.count())*r.twos()[1]/100));
+				rect(2*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[1] / r.count())*r.fives()[1]/100)+(float)(-6*height*(r.totals()[1] / r.count())*r.fours()[1]/100)+(float)(-6*height*(r.totals()[1] / r.count())*r.threes()[1]/100),width/11-20,(float)(-6*height*(r.totals()[1] / r.count())*r.twos()[1]/100));
 				}
 			if (t3) {
 				fill(255,0,0);
-				rect(3*width/11-width/22+10,height-40,width/11-20,(float)(-3000*(r.totals()[2] / r.count()*(r.fives()[2] / 100))));
+				rect(3*width/11-width/22+10,height-40,width/11-20,(float)(-6*height*(r.totals()[2] / r.count()*(r.fives()[2] / 100))));
 				fill(0, 255, 0);
-				rect(3*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[2] / r.count())*r.fives()[2]/100),width/11-20,(float)(-3000*(r.totals()[2] / r.count())*r.fours()[2]/100));
+				rect(3*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[2] / r.count())*r.fives()[2]/100),width/11-20,(float)(-6*height*(r.totals()[2] / r.count())*r.fours()[2]/100));
 				fill(0, 0, 255);
-				rect(3*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[2] / r.count())*r.fives()[2]/100)+(float)(-3000*(r.totals()[2] / r.count())*r.fours()[2]/100),width/11-20,(float)(-3000*(r.totals()[2] / r.count())*r.threes()[2]/100));
+				rect(3*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[2] / r.count())*r.fives()[2]/100)+(float)(-6*height*(r.totals()[2] / r.count())*r.fours()[2]/100),width/11-20,(float)(-6*height*(r.totals()[2] / r.count())*r.threes()[2]/100));
 				fill(255, 255, 0);
-				rect(3*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[2] / r.count())*r.fives()[2]/100)+(float)(-3000*(r.totals()[2] / r.count())*r.fours()[2]/100)+(float)(-3000*(r.totals()[2] / r.count())*r.threes()[2]/100),width/11-20,(float)(-3000*(r.totals()[2] / r.count())*r.twos()[2]/100));
+				rect(3*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[2] / r.count())*r.fives()[2]/100)+(float)(-6*height*(r.totals()[2] / r.count())*r.fours()[2]/100)+(float)(-6*height*(r.totals()[2] / r.count())*r.threes()[2]/100),width/11-20,(float)(-6*height*(r.totals()[2] / r.count())*r.twos()[2]/100));
 				
 			}
 			if (t4) {
 				fill(255,0,0);
-				rect(4*width/11-width/22+10,height-40,width/11-20,(float)(-3000*(r.totals()[3] / r.count()*(r.fives()[3] / 100))));
+				rect(4*width/11-width/22+10,height-40,width/11-20,(float)(-6*height*(r.totals()[3] / r.count()*(r.fives()[3] / 100))));
 				fill(0, 255, 0);
-				rect(4*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[3] / r.count())*r.fives()[3]/100),width/11-20,(float)(-3000*(r.totals()[3] / r.count())*r.fours()[3]/100));
+				rect(4*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[3] / r.count())*r.fives()[3]/100),width/11-20,(float)(-6*height*(r.totals()[3] / r.count())*r.fours()[3]/100));
 				fill(0, 0, 255);
-				rect(4*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[3] / r.count())*r.fives()[3]/100)+(float)(-3000*(r.totals()[3] / r.count())*r.fours()[3]/100),width/11-20,(float)(-3000*(r.totals()[3] / r.count())*r.threes()[3]/100));
+				rect(4*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[3] / r.count())*r.fives()[3]/100)+(float)(-6*height*(r.totals()[3] / r.count())*r.fours()[3]/100),width/11-20,(float)(-6*height*(r.totals()[3] / r.count())*r.threes()[3]/100));
 				fill(255, 255, 0);
-				rect(4*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[3] / r.count())*r.fives()[3]/100)+(float)(-3000*(r.totals()[3] / r.count())*r.fours()[3]/100)+(float)(-3000*(r.totals()[3] / r.count())*r.threes()[3]/100),width/11-20,(float)(-3000*(r.totals()[3] / r.count())*r.twos()[3]/100));
+				rect(4*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[3] / r.count())*r.fives()[3]/100)+(float)(-6*height*(r.totals()[3] / r.count())*r.fours()[3]/100)+(float)(-6*height*(r.totals()[3] / r.count())*r.threes()[3]/100),width/11-20,(float)(-6*height*(r.totals()[3] / r.count())*r.twos()[3]/100));
 				
 			}
 			if (t5) {
 				fill(255,0,0);
-				rect(5*width/11-width/22+10,height-40,width/11-20,(float)(-3000*(r.totals()[4] / r.count()*(r.fives()[4] / 100))));
+				rect(5*width/11-width/22+10,height-40,width/11-20,(float)(-6*height*(r.totals()[4] / r.count()*(r.fives()[4] / 100))));
 				fill(0, 255, 0);
-				rect(5*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[4] / r.count())*r.fives()[4]/100),width/11-20,(float)(-3000*(r.totals()[4] / r.count())*r.fours()[4]/100));
+				rect(5*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[4] / r.count())*r.fives()[4]/100),width/11-20,(float)(-6*height*(r.totals()[4] / r.count())*r.fours()[4]/100));
 				fill(0, 0, 255);
-				rect(5*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[4] / r.count())*r.fives()[4]/100)+(float)(-3000*(r.totals()[4] / r.count())*r.fours()[4]/100),width/11-20,(float)(-3000*(r.totals()[4] / r.count())*r.threes()[4]/100));
+				rect(5*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[4] / r.count())*r.fives()[4]/100)+(float)(-6*height*(r.totals()[4] / r.count())*r.fours()[4]/100),width/11-20,(float)(-6*height*(r.totals()[4] / r.count())*r.threes()[4]/100));
 				fill(255, 255, 0);
-				rect(5*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[4] / r.count())*r.fives()[4]/100)+(float)(-3000*(r.totals()[4] / r.count())*r.fours()[4]/100)+(float)(-3000*(r.totals()[4] / r.count())*r.threes()[4]/100),width/11-20,(float)(-3000*(r.totals()[4] / r.count())*r.twos()[4]/100));
+				rect(5*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[4] / r.count())*r.fives()[4]/100)+(float)(-6*height*(r.totals()[4] / r.count())*r.fours()[4]/100)+(float)(-6*height*(r.totals()[4] / r.count())*r.threes()[4]/100),width/11-20,(float)(-6*height*(r.totals()[4] / r.count())*r.twos()[4]/100));
 				
 			}
 			if (t6) {
 				fill(255,0,0);
-				rect(6*width/11-width/22+10,height-40,width/11-20,(float)(-3000*(r.totals()[5] / r.count()*(r.fives()[5] / 100))));
+				rect(6*width/11-width/22+10,height-40,width/11-20,(float)(-6*height*(r.totals()[5] / r.count()*(r.fives()[5] / 100))));
 				fill(0, 255, 0);
-				rect(6*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[5] / r.count())*r.fives()[5]/100),width/11-20,(float)(-3000*(r.totals()[5] / r.count())*r.fours()[5]/100));
+				rect(6*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[5] / r.count())*r.fives()[5]/100),width/11-20,(float)(-6*height*(r.totals()[5] / r.count())*r.fours()[5]/100));
 				fill(0, 0, 255);
-				rect(6*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[5] / r.count())*r.fives()[5]/100)+(float)(-3000*(r.totals()[5] / r.count())*r.fours()[5]/100),width/11-20,(float)(-3000*(r.totals()[5] / r.count())*r.threes()[5]/100));
+				rect(6*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[5] / r.count())*r.fives()[5]/100)+(float)(-6*height*(r.totals()[5] / r.count())*r.fours()[5]/100),width/11-20,(float)(-6*height*(r.totals()[5] / r.count())*r.threes()[5]/100));
 				fill(255, 255, 0);
-				rect(6*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[5] / r.count())*r.fives()[5]/100)+(float)(-3000*(r.totals()[5] / r.count())*r.fours()[5]/100)+(float)(-3000*(r.totals()[5] / r.count())*r.threes()[5]/100),width/11-20,(float)(-3000*(r.totals()[5] / r.count())*r.twos()[5]/100));
+				rect(6*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[5] / r.count())*r.fives()[5]/100)+(float)(-6*height*(r.totals()[5] / r.count())*r.fours()[5]/100)+(float)(-6*height*(r.totals()[5] / r.count())*r.threes()[5]/100),width/11-20,(float)(-6*height*(r.totals()[5] / r.count())*r.twos()[5]/100));
 				
 			}
 			if (t7) {
 				fill(255,0,0);
-				rect(7*width/11-width/22+10,height-40,width/11-20,(float)(-3000*(r.totals()[6] / r.count()*(r.fives()[6] / 100))));
+				rect(7*width/11-width/22+10,height-40,width/11-20,(float)(-6*height*(r.totals()[6] / r.count()*(r.fives()[6] / 100))));
 				fill(0, 255, 0);
-				rect(7*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[6] / r.count())*r.fives()[6]/100),width/11-20,(float)(-3000*(r.totals()[6] / r.count())*r.fours()[6]/100));
+				rect(7*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[6] / r.count())*r.fives()[6]/100),width/11-20,(float)(-6*height*(r.totals()[6] / r.count())*r.fours()[6]/100));
 				fill(0, 0, 255);
-				rect(7*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[6] / r.count())*r.fives()[6]/100)+(float)(-3000*(r.totals()[6] / r.count())*r.fours()[6]/100),width/11-20,(float)(-3000*(r.totals()[6] / r.count())*r.threes()[6]/100));
+				rect(7*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[6] / r.count())*r.fives()[6]/100)+(float)(-6*height*(r.totals()[6] / r.count())*r.fours()[6]/100),width/11-20,(float)(-6*height*(r.totals()[6] / r.count())*r.threes()[6]/100));
 				fill(255, 255, 0);
-				rect(7*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[6] / r.count())*r.fives()[6]/100)+(float)(-3000*(r.totals()[6] / r.count())*r.fours()[6]/100)+(float)(-3000*(r.totals()[6] / r.count())*r.threes()[6]/100),width/11-20,(float)(-3000*(r.totals()[6] / r.count())*r.twos()[6]/100));
+				rect(7*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[6] / r.count())*r.fives()[6]/100)+(float)(-6*height*(r.totals()[6] / r.count())*r.fours()[6]/100)+(float)(-6*height*(r.totals()[6] / r.count())*r.threes()[6]/100),width/11-20,(float)(-6*height*(r.totals()[6] / r.count())*r.twos()[6]/100));
 				
 			}
 			if (t8) {
 				fill(255,0,0);
-				rect(8*width/11-width/22+10,height-40,width/11-20,(float)(-3000*(r.totals()[7] / r.count()*(r.fives()[7] / 100))));
+				rect(8*width/11-width/22+10,height-40,width/11-20,(float)(-6*height*(r.totals()[7] / r.count()*(r.fives()[7] / 100))));
 				fill(0, 255, 0);
-				rect(8*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[7] / r.count())*r.fives()[7]/100),width/11-20,(float)(-3000*(r.totals()[7] / r.count())*r.fours()[7]/100));
+				rect(8*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[7] / r.count())*r.fives()[7]/100),width/11-20,(float)(-6*height*(r.totals()[7] / r.count())*r.fours()[7]/100));
 				fill(0, 0, 255);
-				rect(8*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[7] / r.count())*r.fives()[7]/100)+(float)(-3000*(r.totals()[7] / r.count())*r.fours()[7]/100),width/11-20,(float)(-3000*(r.totals()[7] / r.count())*r.threes()[7]/100));
+				rect(8*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[7] / r.count())*r.fives()[7]/100)+(float)(-6*height*(r.totals()[7] / r.count())*r.fours()[7]/100),width/11-20,(float)(-6*height*(r.totals()[7] / r.count())*r.threes()[7]/100));
 				fill(255, 255, 0);
-				rect(8*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[7] / r.count())*r.fives()[7]/100)+(float)(-3000*(r.totals()[7] / r.count())*r.fours()[7]/100)+(float)(-3000*(r.totals()[7] / r.count())*r.threes()[7]/100),width/11-20,(float)(-3000*(r.totals()[7] / r.count())*r.twos()[7]/100));
+				rect(8*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[7] / r.count())*r.fives()[7]/100)+(float)(-6*height*(r.totals()[7] / r.count())*r.fours()[7]/100)+(float)(-6*height*(r.totals()[7] / r.count())*r.threes()[7]/100),width/11-20,(float)(-6*height*(r.totals()[7] / r.count())*r.twos()[7]/100));
 				
 			}
 			if (t9) {
 				fill(255,0,0);
-				rect(9*width/11-width/22+10,height-40,width/11-20,(float)(-3000*(r.totals()[8] / r.count()*(r.fives()[8] / 100))));
+				rect(9*width/11-width/22+10,height-40,width/11-20,(float)(-6*height*(r.totals()[8] / r.count()*(r.fives()[8] / 100))));
 				fill(0, 255, 0);
-				rect(9*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[8] / r.count())*r.fives()[8]/100),width/11-20,(float)(-3000*(r.totals()[8] / r.count())*r.fours()[8]/100));
+				rect(9*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[8] / r.count())*r.fives()[8]/100),width/11-20,(float)(-6*height*(r.totals()[8] / r.count())*r.fours()[8]/100));
 				fill(0, 0, 255);
-				rect(9*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[8] / r.count())*r.fives()[8]/100)+(float)(-3000*(r.totals()[8] / r.count())*r.fours()[8]/100),width/11-20,(float)(-3000*(r.totals()[8] / r.count())*r.threes()[8]/100));
+				rect(9*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[8] / r.count())*r.fives()[8]/100)+(float)(-6*height*(r.totals()[8] / r.count())*r.fours()[8]/100),width/11-20,(float)(-6*height*(r.totals()[8] / r.count())*r.threes()[8]/100));
 				fill(255, 255, 0);
-				rect(9*width/11-width/22+10,height-40+(float)(-3000*(r.totals()[8] / r.count())*r.fives()[8]/100)+(float)(-3000*(r.totals()[8] / r.count())*r.fours()[8]/100)+(float)(-3000*(r.totals()[8] / r.count())*r.threes()[8]/100),width/11-20,(float)(-3000*(r.totals()[8] / r.count())*r.twos()[8]/100));
+				rect(9*width/11-width/22+10,height-40+(float)(-6*height*(r.totals()[8] / r.count())*r.fives()[8]/100)+(float)(-6*height*(r.totals()[8] / r.count())*r.fours()[8]/100)+(float)(-6*height*(r.totals()[8] / r.count())*r.threes()[8]/100),width/11-20,(float)(-6*height*(r.totals()[8] / r.count())*r.twos()[8]/100));
 				
 			}
 		}

@@ -11,7 +11,7 @@ public class Read {
 	Double[] fin = new Double[72];
 	{
 	try{
-	scan = new Scanner(new File("C:\\EclipseWorkspaces\\csse120\\New folder\\datavis\\src\\data\\source.txt"));
+	scan = new Scanner(new File("C:\\EclipseWorkspaces\\csse120\\New folder\\MattH\\datavis\\src\\data\\source.txt"));
 	}
 	catch(FileNotFoundException e){}
 	}
