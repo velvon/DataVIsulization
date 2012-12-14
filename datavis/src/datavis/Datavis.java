@@ -138,6 +138,8 @@ public class Datavis extends PApplet {
 			{
 				if(mouseX>=width/11-24&&mouseX<=width/11+24&&mouseY>=height-20&&mouseY<=height-5)
 				{
+					g.setxp(width/2);
+					g.setyp((height/2));
 					mous=1;
 					a=10;
 					if(t1)
@@ -147,6 +149,8 @@ public class Datavis extends PApplet {
 				}
 				if(mouseX>=2*width/11-24&&mouseX<=2*width/11+24&&mouseY>=height-20&&mouseY<=height-5)
 				{
+					g2.setxp(width/2);
+					g2.setyp((height/2));
 					mous=1;
 					b=10;
 					if(t2)
@@ -156,6 +160,8 @@ public class Datavis extends PApplet {
 				}
 				if(mouseX>=3*width/11-24&&mouseX<=3*width/11+24&&mouseY>=height-20&&mouseY<=height-5)
 				{
+					g3.setxp(width/2);
+					g3.setyp((height/2));
 					mous=1;
 					c=10;
 					if(t3)
@@ -165,6 +171,8 @@ public class Datavis extends PApplet {
 				}
 				if(mouseX>=4*width/11-24&&mouseX<=4*width/11+24&&mouseY>=height-20&&mouseY<=height-5)
 				{
+					g4.setxp(width/2);
+					g4.setyp((height/2));
 					mous=1;
 					d=10;
 					if(t4)
@@ -174,6 +182,8 @@ public class Datavis extends PApplet {
 				}
 				if(mouseX>=5*width/11-24&&mouseX<=5*width/11+24&&mouseY>=height-20&&mouseY<=height-5)
 				{
+					g5.setxp(width/2);
+					g5.setyp((height/2));
 					mous=1;
 					e=10;
 					if(t5)
@@ -183,6 +193,8 @@ public class Datavis extends PApplet {
 				}
 				if(mouseX>=6*width/11-24&&mouseX<=6*width/11+24&&mouseY>=height-20&&mouseY<=height-5)
 				{
+					g6.setxp(width/2);
+					g6.setyp((height/2));
 					mous=1;
 					f=10;
 					if(t6)
@@ -192,6 +204,8 @@ public class Datavis extends PApplet {
 				}
 				if(mouseX>=7*width/11-24&&mouseX<=7*width/11+24&&mouseY>=height-20&&mouseY<=height-5)
 				{
+					g7.setxp(width/2);
+					g7.setyp((height/2));
 					mous=1;
 					h=10;
 					if(t7)
@@ -201,6 +215,8 @@ public class Datavis extends PApplet {
 				}
 				if(mouseX>=8*width/11-24&&mouseX<=8*width/11+24&&mouseY>=height-20&&mouseY<=height-5)
 				{
+					g8.setxp(width/2);
+					g8.setyp((height/2));
 					mous=1;
 					i=10;
 					if(t8)
@@ -210,6 +226,8 @@ public class Datavis extends PApplet {
 				}
 				if(mouseX>=9*width/11-24&&mouseX<=9*width/11+24&&mouseY>=height-20&&mouseY<=height-5)
 				{
+					g9.setxp(width/2);
+					g9.setyp((height/2));
 					mous=1;
 					j=10;
 					if(t9)
@@ -219,6 +237,7 @@ public class Datavis extends PApplet {
 				}
 				if((mouseX>=(10*width/11-24))&&(mouseX<=(10*width/11+24))&&(mouseY>=(height-20))&&(mouseY<=(height-5)))
 				{
+					
 					mous=1;
 					if (bar==false)
 				{
