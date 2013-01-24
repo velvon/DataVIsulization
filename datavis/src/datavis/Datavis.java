@@ -577,6 +577,7 @@ public class Datavis extends PApplet {
 fill(255,255,255);
 	text("ap computer science a test scores",width/2,40);
 	}
+
 	public void mouseReleased() {
 		mous=0;
 		}
