@@ -1,7 +1,8 @@
 import java.util.*;
 import java.io.*;
 
-class read {
+class read 
+  try{
   int[][] nums = new int[35][16];
   String[] names = new String[16];
   ArrayList<String> dates = new ArrayList<String>();
@@ -9,7 +10,8 @@ class read {
   String temp;
   int a = 0;
   int b = 0;
-
+}
+catch(Exception e){}
   read() {
     try {
       scan = new Scanner(
@@ -18,6 +20,7 @@ class read {
     } catch (Exception e) {
       System.out.println(e);
     }
+    try{
     scan.useDelimiter("  ");
 
     while (scan.hasNext()) {
@@ -61,18 +64,27 @@ class read {
       dates.set(d, k.substring(0, 4));
       d++;
     }
+  }catch(Exception e){}
   }
 
   public int[][] num() {
+    try{
     return nums;
+  }catch(Exception e)
+  {}
   }
 
   public ArrayList<String> dat() {
+    try{
     return dates;
+    }
+    catch(Exception e){}
   }
 
   public String[] nam() {
+    try{
     return names;
+    }catch(Exception e){}
 
   }
 }
