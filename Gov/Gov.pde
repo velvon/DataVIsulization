@@ -12,6 +12,7 @@ import java.util.*;
     
   }
    void draw() {
+    try{
     background(0,0,0);
     int b=0;
     ArrayList<String> temp = r.dat();
@@ -133,6 +134,9 @@ import java.util.*;
     text("75%",0,(height-50)/4);
 
     }
+    catch(Exception e)
+    {}
+   }
   public void mouseReleased(){
     mo=0;
   }
